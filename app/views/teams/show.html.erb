@@ -1,0 +1,10 @@
+<% if current_user.team == @team %>
+  <%= name_with_status("My Status", current_user, true) %>
+<% end %>
+
+<%= content_tag(:h1, @team.name) %>
+
+<%= render 'users/users_list', users:@users %>
+
+<%= link_to 'Edit', edit_team_path(@team) %> |
+<%= link_to 'Back', teams_path %>

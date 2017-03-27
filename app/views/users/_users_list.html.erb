@@ -1,0 +1,6 @@
+<%= content_tag :div, id:"users-container", data:{user_auto_update:true} do %>
+  <%= content_tag(:h2, "Users")  %>
+  <% users.each do |user| %>
+    <%= name_with_status(user.full_name, user) %>
+  <% end %>
+<% end %>

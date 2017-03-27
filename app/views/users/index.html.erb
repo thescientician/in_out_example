@@ -1,0 +1,10 @@
+<%= name_with_status("My Status", current_user, true) %>
+
+<%= render 'users/users_list', users:@users %>
+
+<%= content_tag :div, id:"teams-container" do %>
+  <%= content_tag(:h2, "Teams") %>
+  <% @teams.each do |team| %>
+    <%= content_tag(:p, link_to(team.name, team)) %>
+  <% end %>
+<% end %>

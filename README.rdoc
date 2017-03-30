@@ -1,4 +1,4 @@
-Clio In and Out Board skeleton:
+In and Out Board skeleton:
 
 Feel free to alter the config/database.yml to suit your development environment.
 
